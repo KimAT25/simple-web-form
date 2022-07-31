@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
 
 async function sendEmail(name, email, description) {
-    console.log(name, email, description);
     const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: process.env.SMTP_PORT,
@@ -22,7 +21,6 @@ async function sendEmail(name, email, description) {
                Message: ${description}`,
     };
     try {
-        console.log(mailOption);
         await transporter.sendMail(mailOption);
         return Promise.resolve("Message Sent Successfully!");
     } catch (error) {

@@ -22,8 +22,7 @@
             },
             body: JSON.stringify(formData)
         })
-            .then(response => {
-                console.log(response);
+            .then(_ => {
                 form.reset()
             })
             .catch(error => console.log(error));
