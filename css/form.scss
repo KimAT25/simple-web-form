@@ -46,6 +46,15 @@
             border: none;
             background-color: var(--link-color);
             @include text(#FFFFFF, normal, 500, 1.125rem, 1.5rem);
+
+            //&:hover {
+            //    opacity: 0.85;
+            //}
+
+            &:active {
+                background-color: var(--link-active-color);
+
+            }
         }
 
         .funcs-icon {
@@ -66,4 +75,8 @@
             }
         }
     }
+}
+
+.error {
+    border-bottom: 1px solid red;
 }

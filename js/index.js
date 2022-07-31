@@ -5,10 +5,11 @@
             const data = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
-                description: document.getElementById('descrp').value
+                description: document.getElementById('description').value
             }
-            console.log(data);
-            sendEmailForm(data);
+            if (validateForm(data)) {
+                sendEmailForm(data);
+            }
         })
     }
 
@@ -26,6 +27,17 @@
                 form.reset()
             })
             .catch(error => console.log(error));
+    }
+
+    function validateForm(data) {
+        let isValid = false;
+        for(const key of Object.keys(data)) {
+            isValid = data[key] !== '';
+            !isValid ?
+                document.getElementById(key).classList.add('error') :
+                    document.getElementById(key).classList.remove('error')
+        }
+        return isValid;
     }
 
     addClickListener();

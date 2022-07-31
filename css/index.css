@@ -78,6 +78,9 @@
     width: 100%;
   }
 }
+.form__buttons-wrapper .submit-button:active {
+  background-color: var(--link-active-color);
+}
 .form__buttons-wrapper .funcs-icon {
   display: flex;
   align-items: center;
@@ -96,6 +99,10 @@
 }
 .form__buttons-wrapper .funcs-icon img:last-child {
   margin: 0;
+}
+
+.error {
+  border-bottom: 1px solid red;
 }
 
 .title {
@@ -164,6 +171,7 @@
   --main-color: #21232D;
   --secondary-color: #A8A0B0;
   --link-color: #8643DC;
+  --link-active-color: #6c36af;
   --lg: 1200px;
   --md: 768px;
   --sm: 568px;
