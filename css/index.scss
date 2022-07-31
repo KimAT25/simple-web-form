@@ -1,0 +1,38 @@
+@import "header-styles";
+@import "main";
+
+:root {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: auto;
+    scroll-behavior: smooth;
+    --main-color: #21232D;
+    --secondary-color: #A8A0B0;
+    --link-color: #8643DC;
+    --lg: 1200px;
+    --md: 768px;
+    --sm: 568px;
+    font-size: 1rem;
+    /*background: linear-gradient(180deg, rgba(187, 133, 255, 0.166) -8.54%, rgba(255, 244, 251, 0.2) 100%);*/
+    /*filter: blur(150px);*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+header,
+main,
+footer {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    margin: 0 11.458vw 0 11.458vw;
+}

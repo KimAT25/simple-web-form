@@ -1,0 +1,19 @@
+.header {
+    margin: 3.472vw 0 2.222vw 0;
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--link-color);
+    }
+
+    &__active-mark {
+        width: 50px;
+        height: 2px;
+        background-color: var(--link-color);
+        border: none;
+        margin: 0;
+    }
+}

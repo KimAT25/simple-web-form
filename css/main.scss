@@ -1,0 +1,46 @@
+@import "form.scss";
+@import "mixins";
+
+.title {
+    margin-bottom: 3.472vw;
+    &__wrapper {
+        @media screen and (max-width: 1200px) {
+            @include flex(flex-start, center, column-reverse);
+            gap: 1vw;
+        }
+        @include flex(flex-start, space-between, row);
+        gap: 26.042vw;
+    }
+
+    &__text {
+        @include text(var(--main-color), normal, 500, 2.25rem, 3.25rem);
+    }
+
+    &__email {
+        @include text(var(--link-color), normal, 400, 1.5rem, 1.75rem);
+        text-decoration-line: underline;
+        text-transform: lowercase;
+    }
+}
+
+.footer-wrapper {
+    @include flex(center, center, column);
+    margin-bottom: 3.472vw;
+
+    &__title {
+        @include text(var(--main-color), normal, 500, 2.25rem, 3rem);
+        margin-bottom: 2.083vw;
+    }
+
+    &__social {
+        img {
+            margin-right: 2.778vw;
+
+            &:last-child {
+                margin: 0;
+            }
+
+        }
+
+    }
+}
